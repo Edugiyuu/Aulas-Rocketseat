@@ -1,6 +1,7 @@
 const questions = [
     "O que aprendi hoje?",
-    "O que me deixou feliz hoje?"
+    "O que me deixou feliz hoje?",
+    "Teste"
 ]
 const ask = (index = 0) => {
     process.stdout.write(questions[index]+ ' > ')
@@ -18,12 +19,11 @@ process.stdin.on("data",data => {
     }
 })
 
-process.on('exit',() =>{
-    console.log(`
-    O que aprendi hoje?
-    ${answers[0]}
+process.on('exit',mostrar)
 
-    "O que me deixou feliz hoje?"
-    ${answers[1]}
-    `);
-})
+function mostrar(){
+    for (let i = 0; i < questions.length; i++) {
+        console.log(`Pergunta:${questions[i]}\n Resposta:${answers[i]}`);
+        
+    }
+}
