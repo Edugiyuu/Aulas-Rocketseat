@@ -2,4 +2,4 @@ const timeOut = 3000
 const finished = () => console.log('done!');
 
 setTimeout(finished, timeOut)
-console.log(`Mostrar`);
+// finished vai ser chamada depois de 3 segundos (callback)

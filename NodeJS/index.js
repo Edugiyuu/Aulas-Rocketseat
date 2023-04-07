@@ -23,7 +23,7 @@ process.on('exit',mostrar)
 
 function mostrar(){
     for (let i = 0; i < questions.length; i++) {
-        console.log(`Pergunta:${questions[i]}\n Resposta:${answers[i]}`);
+        console.log(`Pergunta:${questions[i]}\nResposta:${answers[i]}`);
         
     }
 }
